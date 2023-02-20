@@ -2,6 +2,10 @@
 
 Test project for Fitness Kit company
 
+## Screenshots
+
+<img src="https://user-images.githubusercontent.com/96004385/220171752-46aa4221-d13e-444a-8028-557bbe946f37.png" height="600" width="300" hspace="40">
+
 ## Libraries/Language/Tools 🛠
 
 <li><a href="https://developer.android.com/kotlin">Kotlin</a></li>
