@@ -4,7 +4,7 @@ Test project for Fitness Kit company
 
 ## Screenshots
 
-<img src="https://user-images.githubusercontent.com/96004385/220171752-46aa4221-d13e-444a-8028-557bbe946f37.png" height="600" width="300" hspace="40">
+<img src="https://user-images.githubusercontent.com/96004385/220175138-b1b706cc-29f9-437a-979a-b4c2f1737788.png" height="600" width="300" hspace="40">
 
 ## Libraries/Language/Tools 🛠
 
