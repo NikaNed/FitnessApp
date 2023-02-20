@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FitnessKit</string>
+    <string name="navigation_lessons">Lessons</string>
+    <string name="navigation_bid">Request</string>
+    <string name="navigation_add">Add</string>
+    <string name="navigation_chat">Chat</string>
+    <string name="navigation_more">More</string>
+    <string name="title_timetable">Timetable</string>
+</resources>

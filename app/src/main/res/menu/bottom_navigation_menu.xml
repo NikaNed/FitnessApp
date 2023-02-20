@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/lessonsFragment"
+        android:icon="@drawable/ic_lessons"
+        android:title="@string/navigation_lessons" />
+
+    <item
+        android:id="@+id/requestFragment"
+        android:icon="@drawable/ic_bid"
+        android:title="@string/navigation_bid" />
+
+
+    <item
+        android:id="@+id/addFragment"
+        android:icon="@drawable/ic_add"
+        android:title="@string/navigation_add" />
+
+    <item
+        android:id="@+id/chatFragment"
+        android:icon="@drawable/ic_chat"
+        android:title="@string/navigation_chat" />
+
+    <item
+        android:id="@+id/moreFragment"
+        android:icon="@drawable/ic_more"
+        android:title="@string/navigation_more" />
+</menu>

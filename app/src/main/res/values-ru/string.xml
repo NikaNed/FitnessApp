@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FitnessKit</string>
+    <string name="navigation_lessons">Занятия</string>
+    <string name="navigation_bid">Заявки</string>
+    <string name="navigation_chat">Чат</string>
+    <string name="navigation_more">Ещё</string>
+    <string name="title_timetable">Расписание</string>
+    <string name="navigation_add">Добавить</string>
+</resources>
