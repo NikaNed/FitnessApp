@@ -5,11 +5,11 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.fitnesskit.databinding.FragmentTimetableBinding
+import com.example.fitnesskit.domain.entities.State
 import com.example.fitnesskit.presentation.FitnessApp
 import com.example.fitnesskit.presentation.TimetableViewModel
 import com.example.fitnesskit.presentation.ViewModelFactory
@@ -54,17 +54,22 @@ class TimetableFragment : Fragment() {
 
         viewModel.getFitnessTimetable()
 
-        viewModel.timetableInfo.observe(viewLifecycleOwner) {
-            adapter = TimetableAdapter()
-            with(binding){
-                rvTimetable.layoutManager = LinearLayoutManager(context)
-                rvTimetable.adapter = adapter
-                adapter.submitList(it)
-            }
-        }
+        viewModel.state.observe(viewLifecycleOwner) {
+            binding.progressBar.visibility = View.GONE
 
-        viewModel.progressBar.observe(viewLifecycleOwner){
-            binding.progressBar.isVisible = it
+            when (it) {
+                is State.Progress -> {
+                    binding.progressBar.visibility = View.VISIBLE
+                }
+                is State.LoadData -> {
+                    adapter = TimetableAdapter()
+                    with(binding){
+                        rvTimetable.layoutManager = LinearLayoutManager(context)
+                        rvTimetable.adapter = adapter
+                        adapter.submitList(it.response)
+                    }
+                }
+            }
         }
     }
 
